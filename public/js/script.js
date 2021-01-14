@@ -10,29 +10,38 @@ document.addEventListener('DOMContentLoaded', function () {
         return result
     }
 
+
+
     const setSamplesFirstWidget = () => {
         getSamples().then((data) => {
             const  list =  document.getElementById("splide__list")
             for (var i=0; i<10; i++){
-                console.log( data[i].image)
                 list.innerHTML += "<div class=\"splide__slide\">\n" +
                     "                    <div class=\"item\">\n" +
                     "                        <div class=\"item-image-container\">\n" +
-                    "                            <img src=\"\" alt=\"\">\n" +
-                    "                            <i class=\"icon-newitem\"></i>\n" +
+                    "                            <img src="+data[i].image+" alt=\"\">\n" +
                     "                            <i class=\"icon-discount\"></i>\n" +
-                    "                            <i class=\"icon-fav\"></i>\n" +
+                    "                            <i class=\"icon-new\">"+data[i].params.land.substring(1, 4)+"</i>\n" +
+                    "                            <i class=\"icon-fav\">"+data[i].params.likeCount+"</i>\n" +
                     "                        </div>\n" +
                     "                        <span class=\"item-title\">"+data[i].name+"</span>\n" +
-                    "                        <span class=\"item-categories\">Categories | Will | Be | Here</span>\n" +
-                    "                        <span class=\"item-price\">55$</span>\n" +
-                    "                        <span class=\"item-oldprice\">59$</span>\n" +
-                    "                        <span class=\"item-detail\">5 Liter (11$ / 1 Liter)</span>\n" +
+                    "                        <span class=\"item-categories\">"+data[i].params.rebsorte+"</span>\n" +
+                    "                        <div class=\"item-text-container\">\n" +
+                    "                        <span class=\"item-price\">"+data[i].priceText+"</span>\n" +
+                    "                        <span class=\"item-oldprice\">"+data[i].oldPriceText+"</span>\n" +
+                    "                        <span class=\"item-detail\">"+data[i].params.basePrice+"</span>\n" +
+                    "                        </div>\n" +
                     "                    </div>\n" +
                     "                </div>"
             }
+
+          /*  if (data[i].params.land !== ''){
+
+                /!*<i class="icon-new"></i>*!/
+            }*/
         })
     }
+
     setSamplesFirstWidget()
     var options = {
         // Define them separately in the ttb(vertical) mode.

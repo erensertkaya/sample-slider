@@ -1,20 +1,19 @@
 body {
-
+    text-align: center;
 }
 
 h1 {
- padding-left: 42rem;
+
 }
 
 .container {
-    margin-left:10rem;
-    margin-right: 10rem;
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
 }
 
-.splide {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-    padding: 2rem 3rem;
+#first-slider {
+    background-color: white;
+    padding: 1rem 3rem 2rem;
 }
 
 .splide__list {
@@ -27,48 +26,135 @@ h1 {
 
 
 .splide__slide {
-    background-color: gray;
-   display: block;
-}
-
-.item{
-    width: 100%;
-    height: 100%;
-}
-
-.item-image-container{
-
-
-}
-.item img{
+    background-color: #F7F7F7;
+    border-style: solid;
+    border-color: white;
     display: block;
-    width: 30%;
-    height: 70%;
+    padding-top: 20px;
+    height: 500px;
+    width: 250px;
 }
 
-.item-title{
-    display: inline;
-    font-size: 4rem;
+.item {
+
 }
 
-.item-categories{
+.item-image-container {
     display: block;
-    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -60px;
 }
 
-.item-detail{
+.item img {
     display: block;
-    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 45%;
 }
 
-.item-price{
-    display: block;
-    font-size: 1rem;
+.item-text-container{
+
 }
 
-.item-oldprice{
+.item-title {
+    font-size: 18px;
     display: block;
-    font-size: 1rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    top: 40px;
 }
+
+.item-categories {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #989898;
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-oldprice {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #989898;
+    text-decoration-line: line-through;;
+}
+
+.item-detail {
+    display: block;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+.icon-discount {
+    width: 50px;
+    height: 35px;
+    background-color: #C4191E;
+    display: block;
+    position: relative;
+    top: -200px;
+}
+
+.icon-discount::after{
+    content: "-15%";
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+}
+
+.icon-new::after{
+    content: "NEU";
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+
+}
+
+.icon-fav {
+    width: 50px;
+    height: 35px;
+    background-color: #FAFEFF;
+    display: block;
+    position: relative;
+    top: -180px;
+    background-image: url("../assets/fav-icon.png");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+}
+
+.icon-fav::after{
+    content: "2";
+    font-size: 18px;
+    color: #7B3F5B;
+    position: relative;
+    top: 8px;
+    left: 12px;
+}
+
+.icon-new {
+    width: 50px;
+    height: 35px;
+    background-color: #2B2B2D;
+    display: block;
+    position: relative;
+    top: -190px;
+}
+
+.spacing{
+
+}
+
+
+
 
 
