@@ -45,10 +45,6 @@ h1 {
     width: 250px;
 }
 
-.item {
-
-}
-
 .item-image-container {
     display: block;
     margin-left: auto;
@@ -112,7 +108,7 @@ h1 {
     top: -200px;
 }
 
-.icon-discount::after{
+.icon-discount p{
  /*   content: "-15%";*/
     color: white;
     font-weight: bold;
@@ -120,7 +116,7 @@ h1 {
     top: 8px;
 }
 
-.icon-new::after{
+.icon-new p{
 /*    content: "NEU";*/
     color: white;
     font-weight: bold;
@@ -142,7 +138,7 @@ h1 {
     background-position: 25% 50%;
 }
 
-.icon-fav::after{
+.icon-fav p{
 /*    content: "2";*/
     font-size: 18px;
     color: #7B3F5B;
