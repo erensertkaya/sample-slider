@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const thirdWidget = document.querySelector("#third-slider > .splide__track");
             const  list =  thirdWidget.querySelector(".splide__list")
             for (var i=0; i<10; i++){
-                list.innerHTML += <div class=\"splide__slide\">\n" +
+                list.innerHTML += "<div class=\"splide__slide\">\n" +
                     "                    <div class=\"item\">\n" +
                     "                        <div class=\"item-image-container\">\n" +
                     "                            <img src="+data[i].image+" alt=\"\">\n" +
